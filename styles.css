@@ -1,0 +1,940 @@
+/* 
+
+Project : Coffee Shop Website
+Author : Geetanjali Pawase
+
+*/
+
+/*-------------GOOGLE FONTS--------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@700&family=Raleway:wght@700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+/*------------ FONT STYLES -------------*/
+
+h1,h2{
+    text-align: center;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    color: #6d4c33;
+    padding: 3% 0 1%;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: #6d4c33;
+}
+
+
+p{
+    font-family: 'Open Sans';
+    color: #1c1c1c;
+}
+
+a{
+    text-transform: uppercase;
+}
+
+
+/*------------ HEADER STYLES -------------*/
+
+
+header{
+    width: 100%;
+    text-align: center;
+}
+
+/*------------ IMAGE STYLES -------------*/
+
+img{
+    width: 100%;
+}
+
+
+/*------------ BUTTON STYLES -------------*/
+
+
+    .button{
+        text-align: center;
+        padding: 3% 0;
+    }
+
+    .button a{
+        font-family: 'Quicksand';
+        font-size: 1.3rem;
+        color: #ffffff;
+        background-color: #9f6630;
+        border-radius: 5px;
+        padding: 1%;
+        text-decoration: none;
+    }
+
+    .banner-button{
+        padding: 3% 10% 7%;
+    }
+
+    .banner-button a{
+        font-family: 'Quicksand';
+        font-size: 1.5rem;
+        color: #4e2b11;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 1%;
+        text-decoration: none;
+    }
+
+
+/*------------ OUR STORY STYLES -------------*/
+
+     .our-story{
+        background-color: #faeedd;
+    }
+
+/*------------ RESERVATION STYLES -------------*/
+
+       .reservation{
+        background-color: #faeedd;
+
+    }
+
+    .reservation-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+/*------------ FORM STYLES -------------*/
+
+        form{
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 1%;
+    }
+
+    form label{
+        font-family: 'Open Sans';
+
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      margin: 0 auto;
+      padding: 12px;
+      display: block;
+      font-family: 'Open Sans';
+      background-color: #faeedd;
+      border: 1px solid #6d4c33;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+
+/*------------ ICON STYLES -------------*/
+
+    .icon-container{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px solid #faeedd;
+    }
+
+    .icon{
+        color: #faeedd;
+        padding: 2% 2%;
+        margin: 0 auto;
+    }
+
+
+/*------------ FOOTER STYLES -------------*/
+
+    footer{
+        background-color: #6d4c33;
+    }
+
+    footer ul li{
+        padding: 3% 0;
+        font-family: 'Open Sans';
+        font-size: 1.2rem;
+        color: #faeedd;
+        text-transform: uppercase;
+    }
+
+    footer ul li a{
+        font-family: 'Open Sans';
+        font-size: 1.2rem;
+        color: #faeedd;
+        padding: 5px;
+    }
+
+    footer ul li a:hover {
+        color: #faeedd;
+        text-decoration: underline; 
+    }
+
+    footer ul li p{
+        font-family: 'Open Sans';
+        font-size: 1.2rem;
+        color: #faeedd;
+        text-transform: uppercase;
+    }
+
+
+/*------------ COPYRIGHT STYLES -------------*/
+
+     .copyright{
+        background-color: #faeedd;
+    }
+
+    p.copyright{
+        font-family: 'Open Sans';
+        font-size: 1.2rem;
+        color: #1c1c1c;
+        padding: 1% 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+
+
+
+
+/*-------------MEDIA QUERIES--------------*/
+
+
+/*----------MEDIA QUERY FOR MOBILE----------*/
+
+@media (min-width: 480px) {
+    
+    /*------------ MOBILE HIDE STYLES -------------*/
+    
+    .mobile-hide{
+        display: none;
+    }
+    
+    /*------------ FONT STYLES -------------*/
+    
+    h1{
+        padding: 7% 0;
+    }
+    
+    /*------------ LOGO STYLES -------------*/
+    
+    .logo{
+    width: 25%;
+    padding-top: 1%;
+    }
+    
+    /*------------ BANNER STYLES -------------*/
+
+    .banner-1{
+    background-image: url(images/banner-coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .banner-1 h2{
+        font-family: 'Raleway';
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #ffffff;
+        padding: 10% 2% 2%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-1 p{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        padding: 1% 2.5% 3%;
+    }    
+
+    .banner-2{
+        background-image: url(images/banner-coffee-cup.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-2 h2{
+        font-family: 'Raleway';
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 2;
+        color: #ffffff;
+        padding: 4% 2% 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-2 h1{
+        font-family: 'Raleway';
+        font-size: 2rem;
+        font-weight: 800;
+        color: #ffffff;
+        padding: 0.7% 2% 4.3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-3{
+        background-image: url(images/our-menu-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-3 h2{
+        font-family: 'Raleway';
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2;
+        color: #ffffff;
+        padding: 4% 2% 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+
+    .banner-3 h1{
+        font-family: 'Raleway';
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 0.7% 2% 4.3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-4{
+        background-image: url(images/favourites-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-4 h2{
+        font-family: 'Raleway';
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2;
+        color: #f7e037;
+        padding: 4% 2% 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+
+    .banner-4 h1{
+        font-family: 'Raleway';
+        font-size: 2rem;
+        font-weight: 700;
+        color: #f7e037;
+        padding: 0.7% 2% 4.3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    
+    /*------------ OUR-MENU STYLES -------------*/
+
+    .our-menu-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu1"
+        "menu2"
+        "menu3";
+    }
+
+    .menu-item-1{
+        grid-area: menu1;
+    }
+
+    .menu-item-2{
+        grid-area: menu2;
+    }
+
+    .menu-item-3{
+        grid-area: menu3;
+    }
+    
+    
+    
+    /*------------ FAVOURITES STYLES -------------*/
+
+    .favourites-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fav1"
+        "fav2"
+        "fav3";
+    }
+    
+    
+    .favourites-item-1{
+        grid-area: fav1;
+    }
+
+    .favourites-item-2{
+        grid-area: fav2;
+    }
+
+    .favourites-item-3{
+        grid-area: fav3;
+    }
+
+    .favourite-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    /*------------ OUR-STORY STYLES -------------*/
+
+
+    .our-story-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "story-image"
+        "story-paragraph";
+    }
+
+    .our-story-image{
+        grid-area: story-image;
+    }
+
+    .our-story-paragraph{
+        grid-area: story-paragraph;
+    }
+
+   
+    /*------------ REWARDS STYLES -------------*/
+    
+    .rewards-container{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2% 0;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "rewards-image"
+    "rewards-paragraph";
+    }
+
+    .rewards-paragraph{
+        grid-area: rewards-paragraph;
+    }
+
+    . rewards-image{
+        grid-area:  rewards-image;
+    }
+    
+    
+    /*------------ FOOTER STYLES -------------*/
+    
+    .footer-container ul{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "quick-links";
+        justify-items: center;
+    }
+
+    .quick-links{
+        grid-area: quick-links;
+    }
+
+    .location{
+        grid-area: location;
+    }
+    
+    
+    /*------------ FORM STYLES -------------*/
+    
+    
+    form{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1%;
+    }
+    
+   /*------------ CONTACT STYLES -------------*/
+    
+    .contact-container{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 4% 0;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "questions"
+    "address";
+    }
+
+    .questions{
+        grid-area: questions;
+    }
+
+    .address{
+        grid-area: address;
+    }
+
+
+
+    
+    
+    
+    
+}
+
+
+
+/*----------MEDIA QUERY FOR DESKTOP----------*/
+@media (min-width: 1000px) {
+    
+
+    
+    
+}
+
+/*----------MEDIA QUERY FOR WIDE DESKTOP----------*/
+@media (min-width: 1200px) {
+    
+    /*------------ DESKTOP SHOW STYLES -------------*/
+    
+    .desktop-show{
+        display: block;
+    }
+    
+    
+    /*------------ LOGO STYLES -------------*/
+    
+    .logo{
+    width: 12%;
+    padding-top: 1%;
+    }
+
+    /*------------ BANNER STYLES -------------*/
+
+    .banner-1{
+        background-image: url(images/banner-coffee-beans.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-1 h2{
+        font-family: 'Raleway';
+        font-size: 7rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #ffffff;
+        padding: 10% 2% 2%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-1 p{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        padding: 1% 2.5% 3%;
+    }
+
+    .banner-2{
+        background-image: url(images/banner-coffee-cup.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-2 h2{
+        font-family: 'Raleway';
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 2.7;
+        color: #ffffff;
+        padding: 4% 2% 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-2 h1{
+        font-family: 'Raleway';
+        font-size: 10rem;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 0.7% 2% 4.3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-3{
+        background-image: url(images/our-menu-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-3 h2{
+        font-family: 'Raleway';
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 2.7;
+        color: #ffffff;
+        padding: 4% 2% 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+
+    .banner-3 h1{
+        font-family: 'Raleway';
+        font-size: 10rem;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 0.7% 2% 4.3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .banner-4{
+        background-image: url(images/favourites-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-4 h2{
+        font-family: 'Raleway';
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 2.7;
+        color: #f7e037;
+        padding: 4% 2% 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+
+    .banner-4 h1{
+        font-family: 'Raleway';
+        font-size: 10rem;
+        font-weight: 700;
+        color: #f7e037;
+        padding: 0.7% 2% 4.3%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+
+
+    /*------------ NAVIGATION STYLES -------------*/
+    
+
+    .nav-container{
+        width: 80%;
+        padding: 2% 0 1%;
+        margin: 0 auto;
+    }
+
+
+    .nav-container ul{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+
+    .nav-container ul li a{
+        font-family: 'Quicksand';
+        font-size: 1.6rem;
+        color: #6d4c33;
+        text-decoration: none;
+    }
+
+    
+    /*------------ OUR-MENU STYLES -------------*/
+
+    .our-menu{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .our-menu img{
+        width: 70%;
+        align-self: center;
+    }
+
+    .our-menu h2{
+        padding: 5% 0;
+    }
+
+    .our-menu p{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1% 2%;
+        line-height: 1.3;
+    }
+
+    .our-menu-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu1 menu2 menu3";
+    }
+
+    .menu-item-1{
+        grid-area: menu1;
+        justify-self: center;
+    }
+
+    .menu-item-2{
+        grid-area: menu2;
+    }
+
+    .menu-item-3{
+        grid-area: menu3;
+    }
+
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /*------------ FAVOURITES STYLES -------------*/
+
+    .favourites{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .favourites h2{
+        padding: 5% 0 4%;
+    }
+
+    .favourites p{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1% 2%;
+        line-height: 1.3;
+    }
+
+
+    .favourites img{
+        width: 70%;
+        align-self: center;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    }
+
+    .favourites-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fav1 fav2 fav3";
+    }
+
+    .favourites-item-1{
+        grid-area: fav1;
+    }
+
+    .favourites-item-2{
+        grid-area: fav2;
+    }
+
+    .favourites-item-3{
+        grid-area: fav3;
+    }
+
+    .favourite-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    /*------------ OUR-STORY STYLES -------------*/
+
+    .our-story-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "story-image story-paragraph";
+    }
+
+    .our-story-image{
+        grid-area: story-image;
+    }
+
+    .our-story-paragraph{
+        grid-area: story-paragraph;
+    }
+
+
+    .our-story-paragraph p{
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    /*------------ REWARDS STYLES -------------*/
+
+    .rewards-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "rewards-paragraph rewards-image";
+    }
+
+    .rewards-paragraph{
+        grid-area: rewards-paragraph;
+    }
+
+    . rewards-image{
+        grid-area:  rewards-image;
+    }
+
+    .rewards-paragraph p{
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    
+    
+    /*------------ RESERVATION STYLES -------------*/
+
+    .reservation h1{
+        padding-bottom: 3%;
+    }
+
+    .reservation-container p{
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+
+
+    /*------------ FOOTER STYLES -------------*/
+
+    .footer-container ul{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "quick-links helpful-links location";
+        justify-items: center;
+    }
+
+    .quick-links{
+        grid-area: quick-links;
+    }
+
+    .helpful-links{
+        grid-area: helpful-links;
+    }
+
+    .location{
+        grid-area: location;
+    }
+
+
+   /*------------ CONTACT STYLES -------------*/
+
+    .contact-container h2{
+        text-align: left;
+        font-family: 'Open Sans';
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .contact-container p{
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 2% 0;
+    }
+
+
+
+    .contact-container{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 4% 0;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "questions address";
+    }
+
+    .questions{
+        grid-area: questions;
+    }
+
+    .address{
+        grid-area: address;
+    }
+
+   
+}
